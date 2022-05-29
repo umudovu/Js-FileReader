@@ -81,5 +81,7 @@ window.onload = function () {
     cname.innerHTML = locname;
     cemail.innerHTML = locemail;
     cdesc.innerHTML = locdesc;
-    primage.setAttribute("src", locimg);
+    if (locimg!=undefined) {
+        primage.setAttribute("src", locimg);
+    }
 }
