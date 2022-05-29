@@ -37,6 +37,9 @@ profileform.addEventListener("submit", function (e) {
         if (primageval != undefined) {
             primage.setAttribute("src", primageval);
         }
+        else{
+            primage.setAttribute("src", img);
+        }
         localStorage.setItem("fullname", nameval);
         localStorage.setItem("email", emailval);
         localStorage.setItem("desc", descval);
